@@ -1,12 +1,21 @@
 let showHeroesBtn = document.getElementById('show-heroes-btn');
 let heroesContainer = document.getElementById('heroes-container');
 let startfightBtn = document.getElementById('start-fight-btn');
+let showWinnerDiv = document.getElementById('show-winner');
+
 showHeroesBtn.addEventListener('click', showHeroesContainer);
+startfightBtn.addEventListener('click', showWinner);
 
 function showHeroesContainer() {
     showHeroesBtn.classList.add('d-none');
     heroesContainer.classList.add('d-flex'); 
     startfightBtn.classList.add('d-block');
+}
+
+function showWinner() {
+  showWinnerDiv.innerHTML = epicFight.findWinner();
+  heroesContainer.classList.remove('d-flex'); 
+  startfightBtn.classList.remove('d-block');
 }
 
 // let showHeroesBtn = document.getElementById('show-heroes-btn');

@@ -86,13 +86,18 @@ class Fight {
     }
 
     findWinner() {
+        let winner = '';
         if (this.hero1.hp > 0) {
-            console.log(this.hero1.name + " won with " + this.hero1.hp + " hp left.");  
+            winner = this.hero1.name + " won with " + this.hero1.hp + " hp left."; 
+            console.log(winner);  
         } else if (this.hero2.hp > 0) {
-            console.log(this.hero2.name + " won with " + this.hero2.hp + " hp left.");
+            winner = this.hero2.name + " won with " + this.hero2.hp + " hp left."
+            console.log(winner);
         } else {
-            console.log('No hero left alive.')
+            winner = 'No hero left alive.'
+            console.log(winner)
         }
+        return winner;
     }
 
     go() {

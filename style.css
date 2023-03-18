@@ -14,6 +14,45 @@ body {
 .heroes-container {
     display: none;
     justify-content: space-between;
+    margin-top: 20px;
+}
+
+.hero-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-name {
+    margin: 20px 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#show-winner {
+    background-color: rgba(1,1,1, .7);
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+}
+
+.hero-container {
+    background-color: rgba(1, 1, 1, .6);
+    height: 400px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-container img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
 }
 
 .buttons-container {
@@ -43,28 +82,32 @@ body {
 .d-block {
     display: flex!important;
 }
-element.style {
+
+/* element.style {
     display: flex;
     justify-content: center;
     align-content: center;
-}
+} */
 
-@media screen and (min-width: 767px) and (max-width: 1024) and (orientation: portret)
-{
-#show-heroes-btn, #start-fight-btn 
-}
-.hero-container img {
-    width: 190px;
+@media screen and (min-width: 767px) and (max-width: 1024px) and (orientation: portret) {
     .hero-name {
         font-size: 24px;
         font-weight: 700;
         display: columns; 
     }
+
+    .hero-container img {
+        width: 190px;
+        height: 190px;
+      
+    }
 }
+
 @media screen and (max-width: 767px) {
-    .hero-container{
+    .hero-container {
         margin-bottom: 20px;
     }
+
     .heroes-container {
        flex-direction: column;
     }
