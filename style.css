@@ -1,0 +1,76 @@
+body {
+    background-image: url("assets/bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.title {
+    text-align: center;
+    background-color: rgba(255,255,255,0.7);
+    padding: 20px 0;
+}
+
+.heroes-container {
+    display: none;
+    justify-content: space-between;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+#show-heroes-btn, #start-fight-btn {
+    font-size: 16px;
+    padding: 20px 30px;
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+#start-fight-btn {
+    display: none
+}
+
+.d-none {
+    display: none!important; /* ascunde butonul*/
+}
+
+.d-flex {
+    display: flex!important;
+}
+
+.d-block {
+    display: flex!important;
+}
+element.style {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024) and (orientation: portret)
+{
+#show-heroes-btn, #start-fight-btn 
+}
+.hero-container img {
+    width: 190px;
+    .hero-name {
+        font-size: 24px;
+        font-weight: 700;
+        display: columns; 
+    }
+}
+@media screen and (max-width: 767px) {
+    .hero-container{
+        margin-bottom: 20px;
+    }
+    .heroes-container {
+       flex-direction: column;
+    }
+}
+/*
+breakpoint mobile max-width:767px
+breakpoints tablet min-width: 768px and max-width 1024px
+breakpoint small laptop min-w: 1025px
+vezi toggle device simulation (in consola), casuta din colt stg sus)
